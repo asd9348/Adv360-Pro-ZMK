@@ -19,8 +19,8 @@
         delete_rest: delete_rest {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>;
-            label = "DELETE_REST";
+            bindings = <&kp B>;
+            label = "delete_rest_label";
         };
 
         end_ent: end_ent {
@@ -149,7 +149,7 @@
 &kp ESC        &kp M      &kp U    &kp I     &kp O        &kp P  &tog 1                                                             &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0                       &kp LANG2
 &kp TAB        &kp Q      &kp W    &kp E     &kp R        &kp T  &none                                                              &none      &kp Y   &kp U   &kp I      &kp O      &kp P                        &kp RIGHT
 &kp LC(COMMA)  &kp A      &kp S    &kp D     &kp F        &kp G  &none     &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &kp H   &kp J   &kp K      &kp L      &custom_shift PIPE UNDER     &macro_ver
-&kp LG(RIGHT)  &kp Z      &kp X    &kp C     &kp V        &kp B                          &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &custom_shift EXCL QUESTION  &kp RIGHT
+&kp LG(RIGHT)  &kp Z      &kp X    &kp C     &kp V        &kp B                          &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &custom_shift EXCL QUESTION  &delete_rest
 &bootloader    &kp GRAVE  &kp DOT  &kp LEFT  &kp LG(TAB)         &kp BSPC  &mo 1         &kp LEFT_SHIFT      &kp LANG1  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT                     &bootloader
             >;
         };
