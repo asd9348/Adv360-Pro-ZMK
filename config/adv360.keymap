@@ -17,6 +17,20 @@
             bindings = <&kp RET>;
         };
 
+        delete_rest: delete_rest {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END) &kp BACKSPACE>;
+            label = "DELETE_REST";
+        };
+
+        end_ent: end_ent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp ENTER>;
+            label = "END_ENT";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -29,34 +43,14 @@
             bindings = <&kp>, <&kp>;
         };
 
-        percent: percent {
+        custom_shift: custom_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "PERCENT";
+            label = "CUSTOM_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <135>;
-        };
-
-        unds: unds {
-            compatible = "zmk,behavior-hold-tap";
-            label = "UNDS";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <135>;
-            flavor = "balanced";
-        };
-
-        ques: ques {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QUES";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <135>;
-            flavor = "balanced";
         };
     };
 
@@ -68,21 +62,21 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2   &kp N3    &kp N4       &kp N5  &tog 1                                                             &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W    &kp E     &kp R        &kp T   &none                                                              &none      &kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S    &kp D     &kp F        &kp G   &none     &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &kp H   &kp J   &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X    &kp C     &kp V        &kp B                           &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp DOT  &kp LEFT  &kp LG(TAB)          &kp BSPC  &mo 1         &kp LEFT_SHIFT      &kp LANG1  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT  &mo 2
+&kp ESC        &kp M      &kp U    &kp I     &kp O        &kp P  &tog 1                                                             &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0                       &kp LANG2
+&kp TAB        &kp Q      &kp W    &kp E     &kp R        &kp T  &none                                                              &none      &kp Y   &kp U   &kp I      &kp O      &kp P                        &delete_rest
+&kp LC(COMMA)  &kp A      &kp S    &kp D     &kp F        &kp G  &none     &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &kp H   &kp J   &kp K      &kp L      &custom_shift PIPE UNDER     &end_ent
+&kp LG(RIGHT)  &kp Z      &kp X    &kp C     &kp V        &kp B                          &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &custom_shift EXCL QUESTION  &macro_ver
+&bootloader    &kp GRAVE  &kp DOT  &kp LEFT  &kp LG(TAB)         &kp BSPC  &mo 1         &kp LEFT_SHIFT      &kp LANG1  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT                     &bootloader
             >;
         };
 
         num_sym {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3           &kp N4           &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W            &kp E            &kp R            &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS         &kp KP_NUMBER_0  &kp RIGHT                &kp BSPC  &none      &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&trans              &kp N                        &kp H            &kp J            &kp K            &kp L            &trans                                             &mo 3      &custom_shift SEMI COLON  &custom_shift AMPERSAND BACKSLASH  &custom_shift CARET HASH  &custom_shift AT_SIGN DLLR  &custom_shift GRAVE TILDE  &trans
+&trans              &custom_shift CARET PERCENT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &none                                              &none      &kp Y                     &kp DOUBLE_QUOTES                  &kp UP                    &kp SQT                     &kp KP_MINUS               &kp BSLH
+&trans              &kp KP_DIVIDE                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &none   &trans  &trans       &kp LGUI   &kp RCTRL  &none      &kp H                     &kp LEFT                           &kp DOWN                  &kp RIGHT                   &kp KP_PLUS                &kp SQT
+&kp LG(LEFT_ARROW)  &kp KP_MINUS                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                      &trans       &kp PG_UP                        &kp N                     &kp KP_N1                          &kp KP_N2                 &kp KP_N3                   &kp KP_ENTER               &kp RSHFT
+&sys_reset          &kp GRAVE                    &trans           &kp KP_NUMBER_0  &trans                            &mo 3   &none   &kp END      &kp PG_DN  &kp ENTER  &kp KP_N0                            &kp UP                             &kp DOWN                  &kp KP_DOT                  &kp RBKT                   &sys_reset
             >;
         };
 
