@@ -31,6 +31,13 @@
             label = "END_ENT";
         };
 
+        all_sel: all_sel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "ALL_SEL";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -107,6 +114,31 @@
             bindings = <&mo 3>;
             key-positions = <66 31 32>;
             slow-release;
+        };
+
+        dt_right {
+            bindings = <&kp LG(LC(RIGHT))>;
+            key-positions = <49 50>;
+        };
+
+        dt_left {
+            bindings = <&kp LG(LC(LEFT))>;
+            key-positions = <48 49>;
+        };
+
+        left_sel {
+            bindings = <&kp LC(LS(LEFT_ARROW))>;
+            key-positions = <56 55>;
+        };
+
+        right_sel {
+            bindings = <&kp LC(LS(RIGHT))>;
+            key-positions = <57 56>;
+        };
+
+        all_sel {
+            bindings = <&kp B>;
+            key-positions = <55 56 57>;
         };
     };
 
