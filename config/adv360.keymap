@@ -157,11 +157,11 @@
 
         num_sym {
             bindings = <
-&trans              &kp N                        &kp H            &kp J            &kp K            &kp L            &trans                                             &mo 3      &custom_shift SEMI COLON  &custom_shift AMPERSAND BACKSLASH  &custom_shift CARET HASH  &custom_shift AT_SIGN DLLR  &custom_shift GRAVE TILDE  &trans
-&trans              &custom_shift CARET PERCENT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &none                                              &none      &kp Y                     &kp DOUBLE_QUOTES                  &kp UP                    &kp SQT                     &kp KP_MINUS               &kp BSLH
-&trans              &kp KP_DIVIDE                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &none   &trans  &trans       &kp LGUI   &kp RCTRL  &none      &kp H                     &kp LEFT                           &kp DOWN                  &kp RIGHT                   &kp KP_PLUS                &kp SQT
-&kp LG(LEFT_ARROW)  &kp KP_MINUS                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                      &trans       &kp PG_UP                        &kp N                     &kp KP_N1                          &kp KP_N2                 &kp KP_N3                   &kp KP_ENTER               &kp RSHFT
-&sys_reset          &kp GRAVE                    &trans           &kp KP_NUMBER_0  &trans                            &mo 3   &none   &kp END      &kp PG_DN  &kp ENTER  &kp KP_N0                            &kp UP                             &kp DOWN                  &kp KP_DOT                  &kp RBKT                   &sys_reset
+&trans              &kp N                        &kp H            &kp J            &kp K            &kp L            &trans                                            &mo 3      &custom_shift SEMI COLON  &custom_shift AMPERSAND BACKSLASH  &custom_shift CARET HASH  &custom_shift AT_SIGN DLLR  &custom_shift GRAVE TILDE  &trans
+&trans              &custom_shift CARET PERCENT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &none                                             &none      &kp Y                     &kp DOUBLE_QUOTES                  &kp UP                    &kp SQT                     &kp KP_MINUS               &kp BSLH
+&trans              &kp KP_DIVIDE                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &none   &trans  &trans      &kp LGUI   &kp RCTRL  &none      &kp H                     &kp LEFT                           &kp DOWN                  &kp RIGHT                   &kp KP_PLUS                &kp SQT
+&kp LG(LEFT_ARROW)  &kp KP_MINUS                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                      &trans      &kp PG_UP                        &kp N                     &kp KP_N1                          &kp KP_N2                 &kp KP_N3                   &kp KP_ENTER               &kp RSHFT
+&sys_reset          &kp GRAVE                    &trans           &kp KP_NUMBER_0  &trans                            &mo 3   &none   &trans      &kp PG_DN  &kp ENTER  &kp KP_N0                            &kp UP                             &kp DOWN                  &kp KP_DOT                  &kp RBKT                   &sys_reset
             >;
         };
 
@@ -206,6 +206,16 @@
         };
 
         layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
