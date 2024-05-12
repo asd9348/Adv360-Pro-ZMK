@@ -146,6 +146,11 @@
             bindings = <&kp B>;
             key-positions = <55 56 57>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 66>;
+        };
     };
 
     keymap {
