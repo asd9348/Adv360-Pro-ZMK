@@ -13,6 +13,7 @@
     behaviors {
         #include "macros.dtsi"
       #include "version.dtsi"
+      #ifndef VERSION_MACRO
 
         as: auto_shift {
                 compatible = "zmk,behavior-hold-tap";
@@ -77,6 +78,7 @@
             flavor = "balanced";
             tapping-term-ms = <135>;
         };
+#endif
     };
 
     macros {
