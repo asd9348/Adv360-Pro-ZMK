@@ -220,7 +220,7 @@
 &trans  &kp LG(LS(C))  &kp F7      &kp F8   &kp F9                &kp C_VOL_DN   &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(SPACE)  &kp F4      &kp F5   &kp F6                &kp K_MUTE     &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LS(T))  &kp F1      &kp F2   &kp F3                &kp LG(LS(S))                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(LC(T))  &kp K_CALC  &trans   &kp C_AL_MY_COMPUTER                 &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LC(T))  &kp K_CALC  &trans   &kp C_AL_MY_COMPUTER                 &trans  &mo 2  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
