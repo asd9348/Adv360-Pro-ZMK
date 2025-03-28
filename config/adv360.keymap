@@ -119,7 +119,7 @@
         compatible = "zmk,combos";
 
         to_func {
-            bindings = <&lt 2 A>;
+            bindings = <&to 2>;
             key-positions = <31 30 66>;
             layers = <0>;
         };
