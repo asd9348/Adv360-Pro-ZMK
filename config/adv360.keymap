@@ -1,11 +1,13 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600// default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 / {
     behaviors {
@@ -67,7 +69,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        cs: custom_shift {
+        custom_shift: custom_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "CUSTOM_SHIFT";
             bindings = <&kp>, <&kp>;
@@ -170,16 +172,16 @@
         default_layer {
             bindings = <
 &kp ESC        &kp M                  &kp U                  &kp I                  &kp O                  &kp P                  &tog 1                                                               &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0                       &kp LANG2
-&kp TAB        &custom_shift Q LS(Q)            &custom_shift W LS(W)  &custom_shift E LS(E)  &custom_shift R LS(R)  &kp T                  &caps_word                                                           &none      &kp Y   &kp U   &kp I      &kp O      &kp P                        &kp RIGHT
-&kp LC(COMMA)  &custom_shift A LS(A)  &kp S                  &kp D                  &kp F                  &kp G                  &none       &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &kp H   &kp J   &kp K      &kp L      &custom_shift PIPE UNDER     &macro_ver
-&kp LG(RIGHT)  &kp Z                  &kp X                  &kp C                  &kp V                  &custom_shift B LS(B)                            &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &custom_shift EXCL QUESTION  &macro_ver
+&kp TAB        &as Q LS(Q)            &as W LS(W)  &as E LS(E)  &as R LS(R)  &kp T                  &caps_word                                                           &none      &kp Y   &kp U   &kp I      &kp O      &kp P                        &kp RIGHT
+&kp LC(COMMA)  &as A LS(A)  &kp S                  &kp D                  &kp F                  &kp G                  &none       &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &kp H   &kp J   &kp K      &kp L      &as PIPE UNDER     &macro_ver
+&kp LG(RIGHT)  &kp Z                  &kp X                  &kp C                  &kp V                  &as B LS(B)                            &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &as EXCL QUESTION  &macro_ver
 &bootloader    &kp GRAVE              &kp DOT                &kp LEFT               &kp LG(TAB)                                   &kp BSPC    &mo 1         &kp LEFT_SHIFT      &kp LANG1  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT                     &bootloader
             >;
         };
 
         num_sym {
             bindings = <
-&trans              &kp N                        &kp H            &kp J            &kp K            &kp L            &trans                                            &mo 3      &custom_shift SEMI COLON  &custom_shift AMPERSAND BACKSLASH  &custom_shift CARET HASH  &custom_shift AT_SIGN DLLR  &custom_shift GRAVE TILDE  &trans
+&trans              &kp N                        &kp H            &kp J            &kp K            &kp L            &trans                                            &mo 3      &as SEMI COLON  &as AMPERSAND BACKSLASH  &as CARET HASH  &as AT_SIGN DLLR  &as GRAVE TILDE  &trans
 &trans              &custom_shift CARET PERCENT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &none                                             &none      &kp Y                     &kp DOUBLE_QUOTES                  &kp UP                    &kp SQT                     &kp KP_MINUS               &kp BSLH
 &trans              &kp KP_DIVIDE                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &none   &trans  &trans      &kp LGUI   &kp RCTRL  &none      &kp H                     &kp LEFT                           &kp DOWN                  &kp RIGHT                   &kp KP_PLUS                &kp SQT
 &kp LG(LEFT_ARROW)  &kp KP_MINUS                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                      &trans      &kp PG_UP                        &kp N                     &kp KP_N1                          &kp KP_N2                 &kp KP_N3                   &kp KP_ENTER               &kp RSHFT
