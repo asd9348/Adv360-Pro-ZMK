@@ -13,16 +13,16 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-    behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <135>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+        behaviors {
+            as: auto_shift {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                tapping_term_ms = <135>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
         };
-    };
 
         macro_ver: macro_ver {
             compatible = "zmk,behavior-macro";
@@ -174,7 +174,7 @@
         default_layer {
             bindings = <
 &kp ESC        &kp M                  &kp U                  &kp I                  &kp O                  &kp P                  &tog 1                                                               &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0                       &kp LANG2
-&kp TAB        &custom_shift Q LS(Q)  &custom_shift W LS(W)  &custom_shift E LS(E)  &custom_shift R LS(R)  &kp T          &caps_word                                                           &none      &kp Y   &kp U   &kp I      &kp O      &kp P                        &kp RIGHT
+&kp TAB        &as Q LS(Q)            &custom_shift W LS(W)  &custom_shift E LS(E)  &custom_shift R LS(R)  &kp T                  &caps_word                                                           &none      &kp Y   &kp U   &kp I      &kp O      &kp P                        &kp RIGHT
 &kp LC(COMMA)  &custom_shift A LS(A)  &kp S                  &kp D                  &kp F                  &kp G                  &none       &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &kp H   &kp J   &kp K      &kp L      &custom_shift PIPE UNDER     &macro_ver
 &kp LG(RIGHT)  &kp Z                  &kp X                  &kp C                  &kp V                  &custom_shift B LS(B)                            &kp LCTRL           &mo 4                             &kp N   &kp M   &kp COMMA  &kp DOT    &custom_shift EXCL QUESTION  &macro_ver
 &bootloader    &kp GRAVE              &kp DOT                &kp LEFT               &kp LG(TAB)                                   &kp BSPC    &mo 1         &kp LEFT_SHIFT      &kp LANG1  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT                     &bootloader
