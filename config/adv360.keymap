@@ -199,6 +199,11 @@
             bindings = <&del_right_mac>;
             key-positions = <42 43>;
         };
+
+        test {
+            bindings = <&kp A>;
+            key-positions = <32 31 66>;
+        };
     };
 
     keymap {
