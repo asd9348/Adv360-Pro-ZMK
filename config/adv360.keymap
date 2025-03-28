@@ -121,7 +121,6 @@
         to_func {
             bindings = <&kp B>;
             key-positions = <31 30 66>;
-            layers = <0>;
         };
 
         space {
