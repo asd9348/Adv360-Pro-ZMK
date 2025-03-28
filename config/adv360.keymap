@@ -196,11 +196,11 @@
 
         default_layer {
             bindings = <
-&kp ESC        &as Y      &as U    &as I     &as O        &kp P  &tog 1                                                               &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0                &kp LANG2
-&kp TAB        &as Q      &as W    &as E     &as R        &as T  &caps_word                                                           &none      &as Y   &as U   &as I      &as O      &as P                 &kp RIGHT
-&kp LC(COMMA)  &as A      &as S    &as D     &as F        &as G  &none       &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI   &caps_word  &none      &as H   &as J   &as K      &as L      &as_ht PIPE UNDER     &macro_ver
-&kp LG(RIGHT)  &as Z      &as X    &as C     &as V        &as B                            &kp LCTRL           &mo 4                             &as N   &as M   &as COMMA  &as DOT    &as_ht EXCL QUESTION  &macro_ver
-&bootloader    &kp GRAVE  &kp DOT  &kp LEFT  &kp LG(TAB)         &kp BSPC    &mo 1         &kp LEFT_SHIFT      &kp LANG1  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT              &bootloader
+&kp ESC        &as Y      &as U    &as I     &as O        &kp P  &tog 1                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9     &kp N0                &kp LANG2
+&kp TAB        &as Q      &as W    &as E     &as R        &as T  &caps_word                                                               &none      &as Y   &as U   &as I      &as O      &as P                 &kp RIGHT
+&kp LC(COMMA)  &as A      &as S    &as D     &as F        &as G  &none       &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &none      &as H   &as J   &as K      &as L      &as_ht PIPE UNDER     &macro_ver
+&kp LG(RIGHT)  &as Z      &as X    &as C     &as V        &as B                            &kp LCTRL           &mo 4                                 &as N   &as M   &as COMMA  &as DOT    &as_ht EXCL QUESTION  &macro_ver
+&bootloader    &kp GRAVE  &kp DOT  &kp LEFT  &kp LG(TAB)         &kp BSPC    &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp RIGHT  &kp RBKT              &bootloader
             >;
         };
 
