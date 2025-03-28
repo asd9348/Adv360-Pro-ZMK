@@ -103,6 +103,13 @@
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
+
+        del_right_mac: del_right_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(RIGHT)) &kp BACKSPACE>;
+            label = "DEL_RIGHT_MAC";
+        };
     };
 
     macros {
@@ -115,7 +122,6 @@
             bindings = <&mo 2>;
             key-positions = <31 30 66>;
             layers = <0>;
-            slow-release;
         };
 
         space {
@@ -188,6 +194,11 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <32 66>;
+        };
+
+        del_right {
+            bindings = <&del_right_mac>;
+            key-positions = <42 43>;
         };
     };
 
