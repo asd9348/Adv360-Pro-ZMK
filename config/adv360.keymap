@@ -137,7 +137,7 @@
         td_release: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = "<on_press> <on_release>";
-            bindings = <&nothing>, <&to 0>;
+            bindings = <&none>, <&to 0>;
         };
     };
 
