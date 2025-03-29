@@ -326,6 +326,11 @@
             key-positions = <42 43>;
             layers = <0>;
         };
+
+        to_top {
+            bindings = <&kp LC(HOME)>;
+            key-positions = <31 17>;
+        };
     };
 
     keymap {
