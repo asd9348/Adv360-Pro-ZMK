@@ -356,51 +356,51 @@
 
         default_layer {
             bindings = <
-&kp ESC        &trans     &trans           &trans             &trans       &trans  &trans                                                                           &kp KP_NUMLOCK  &cs SEMI COLON  &as_ht AMPERSAND BACKSLASH  &as_ht CARET HASH  &as_ht AT_SIGN DLLR  &as_ht GRAVE TILDE    &kp LANG2
-&kp TAB        &as Q      &as W            &as E              &as R        &as T   &del_left_mac                                                                    &del_right_mac  &as Y           &as U                       &as I              &as O                &as P                 &kp RIGHT
-&del_left_mac  &as A      &as S            &as D              &as F        &as G   &kp LC(LEFT_ARROW)  &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &kp LC(RIGHT)   &as H           &as J                       &as K              &as L                &as_ht PIPE UNDER     &del_right_mac
-&kp LG(LEFT)   &as Z      &as X            &as C              &as V        &as B                                     &kp LCTRL           &mo 4                                      &as N           &as M                       &as COMMA          &as DOT              &as_ht EXCL QUESTION  &kp LG(RIGHT)
-&none          &kp GRAVE  &kp LC(LG(DOT))  &kp LC(LG(RIGHT))  &kp LG(TAB)          &kp BSPC            &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                       &kp UP                      &kp LEFT           &kp RIGHT            &kp RBKT              &none
+&kp ESC        &trans        &trans     &trans        &trans              &trans  &trans                                                                           &kp KP_NUMLOCK  &cs SEMI COLON  &as_ht AMPERSAND BACKSLASH  &as_ht CARET HASH  &as_ht AT_SIGN DLLR  &as_ht GRAVE TILDE    &kp LANG2
+&kp TAB        &as Q         &as W      &as E         &as R               &as T   &del_left_mac                                                                    &del_right_mac  &as Y           &as U                       &as I              &as O                &as P                 &kp RIGHT
+&del_left_mac  &as A         &as S      &as D         &as F               &as G   &kp LC(LEFT_ARROW)  &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &kp LC(RIGHT)   &as H           &as J                       &as K              &as L                &as_ht PIPE UNDER     &del_right_mac
+&kp LG(LEFT)   &as Z         &as X      &as C         &as V               &as B                                     &kp LCTRL           &mo 4                                      &as N           &as M                       &as COMMA          &as DOT              &as_ht EXCL QUESTION  &kp LG(RIGHT)
+&none          &sk LEFT_WIN  &sk LCTRL  &sk LEFT_ALT  &sk LG(LEFT_SHIFT)          &kp BSPC            &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                       &kp UP                      &kp LEFT           &kp RIGHT            &kp RBKT              &none
             >;
         };
 
         num_sym {
             bindings = <
-&bootloader  &trans         &trans           &trans           &trans           &trans           &trans                                                         &trans             &trans                                  &trans                      &trans    &trans      &trans    &bootloader
-&trans       &kp PERCENT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &trans                                                         &trans             &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP    &kp SQT     &trans    &kp BSLH
-&trans       &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp LC(LS(LEFT_ARROW))  &trans  &trans      &trans  &kp CAPS   &kp LC(LS(RIGHT))  &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN  &kp RIGHT   &trans    &trans
-&trans       &kp KP_MINUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                                      &trans      &mo 4                                 &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans    &trans      &trans    &kp RSHFT
-&sys_reset   &kp CARET      &kp PERIOD       &kp KP_NUMBER_0  &kp ENTER                         &mo 3                   &trans  &trans      &trans  &kp ENTER  &kp KP_N0                                                  &kp UP                      &kp DOWN  &kp KP_DOT  &kp RBKT  &sys_reset
+&bootloader  &trans         &trans           &trans           &trans           &trans           &trans                                                         &trans             &trans                                  &trans                      &trans    &trans     &trans  &bootloader
+&trans       &kp PERCENT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &trans                                                         &trans             &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP    &kp SQT    &trans  &kp BSLH
+&trans       &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp LC(LS(LEFT_ARROW))  &trans  &trans      &trans  &kp CAPS   &kp LC(LS(RIGHT))  &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN  &kp RIGHT  &trans  &trans
+&trans       &kp KP_MINUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                                      &trans      &mo 4                                 &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans    &trans     &trans  &kp RSHFT
+&sys_reset   &kp CARET      &kp PERIOD       &kp KP_NUMBER_0  &kp ENTER                         &mo 3                   &trans  &trans      &trans  &kp ENTER  &kp KP_N0                                                  &trans                      &trans    &trans     &trans  &sys_reset
             >;
         };
 
         func {
             bindings = <
-&trans  &trans         &kp F10     &kp F11  &kp F12               &kp C_VOL_UP   &tog 1                                      &mo 3   &trans  &trans             &trans     &trans      &trans        &bt BT_SEL 0
-&trans  &kp LG(LS(C))  &kp F7      &kp F8   &kp F9                &kp C_VOL_DN   &none                                       &none   &kp Y   &kp DOUBLE_QUOTES  &kp UP     &kp SQT     &kp KP_MINUS  &bt BT_SEL 1
-&trans  &kp LA(SPACE)  &kp F4      &kp F5   &kp F6                &kp K_MUTE     &none   &trans  &trans      &trans  &trans  &none   &kp H   &kp LEFT           &kp DOWN   &kp RIGHT   &kp KP_PLUS   &bt BT_SEL 2
-&trans  &kp LG(LS(T))  &kp F1      &kp F2   &kp F3                &kp LG(LS(S))                  &trans      &trans                  &kp N   &td_ang            &kp KP_N2  &kp KP_N3   &kp KP_ENTER  &out OUT_TOG
-&trans  &kp LG(LC(T))  &kp K_CALC  &trans   &kp C_AL_MY_COMPUTER                 &trans  &mo 2   &trans      &trans  &trans  &trans          &kp UP             &kp DOWN   &kp KP_DOT  &kp RBKT      &sys_reset
+&trans  &trans         &kp F10  &kp F11  &kp F12  &kp C_VOL_UP   &kp K_CALC                                                &mo 3   &trans  &trans             &trans     &trans      &trans        &bt BT_SEL 0
+&trans  &kp LG(LS(C))  &kp F7   &kp F8   &kp F9   &kp C_VOL_DN   &kp C_AL_MY_COMPUTER                                      &none   &kp Y   &kp DOUBLE_QUOTES  &kp UP     &kp SQT     &kp KP_MINUS  &bt BT_SEL 1
+&trans  &kp LA(SPACE)  &kp F4   &kp F5   &kp F6   &kp K_MUTE     &none                 &trans  &trans      &trans  &trans  &none   &kp H   &kp LEFT           &kp DOWN   &kp RIGHT   &kp KP_PLUS   &bt BT_SEL 2
+&trans  &kp LG(LS(T))  &kp F1   &kp F2   &kp F3   &kp LG(LS(S))                                &trans      &trans                  &kp N   &td_ang            &kp KP_N2  &kp KP_N3   &kp KP_ENTER  &out OUT_TOG
+&trans  &kp LG(LC(T))  &trans   &trans   &trans                  &trans                &mo 2   &trans      &trans  &trans  &trans          &kp UP             &kp DOWN   &kp KP_DOT  &kp RBKT      &sys_reset
             >;
         };
 
         num_sym_left {
             bindings = <
-&bootloader  &trans    &trans             &trans    &trans         &trans  &trans                                      &trans  &trans  &trans         &trans    &trans         &trans    &bootloader
+&bootloader  &trans    &trans         &trans    &trans         &trans  &trans                                      &trans  &trans  &trans         &trans    &trans         &trans    &bootloader
 &trans       &trans    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &trans  &trans                                      &trans  &trans  &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &trans    &trans
-&trans       &trans    &kp LEFT           &kp DOWN  &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT      &trans    &trans
-&trans       &kp LGUI  &kp LCTRL          &kp LALT  &kp LSHFT      &trans                  &trans      &trans                  &trans  &kp RSHFT      &kp RALT  &kp RCTRL      &kp RGUI  &trans
-&trans       &trans    &trans             &trans    &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans    &trans         &trans    &trans
+&trans       &trans    &kp LEFT       &kp DOWN  &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT      &trans    &trans
+&trans       &kp LGUI  &kp LCTRL      &kp LALT  &kp LSHFT      &trans                  &trans      &trans                  &trans  &kp RSHFT      &kp RALT  &kp RCTRL      &kp RGUI  &trans
+&trans       &trans    &trans         &trans    &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans    &trans         &trans    &trans
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2  &trans  &trans                                      &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans                                      &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans                                      &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                  &trans      &trans                  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans          &trans          &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans           &trans  &trans
             >;
         };
 
