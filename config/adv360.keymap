@@ -134,11 +134,6 @@
             bindings = <&mt GT LT>, <&kp GT &kp LT &kp LEFT>;
         };
 
-        td_release: tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = "<on_press> <on_release>";
-            bindings = <&none>, <&to 0>;
-        };
     };
 
     macros {
