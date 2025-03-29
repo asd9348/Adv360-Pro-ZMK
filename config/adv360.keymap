@@ -342,7 +342,7 @@
         };
 
         to_top {
-            bindings = <&kp LC(HOME)>;
+            bindings = <&kp LC(C_AC_HOME)>;
             key-positions = <31 17>;
         };
     };
@@ -352,18 +352,18 @@
 
         default_layer {
             bindings = <
-&kp ESC        &trans     &trans   &trans    &trans       &trans  &trans                                                                           &kp KP_NUMLOCK  &as_ht SEMI COLON  &as_ht AMPERSAND BACKSLASH  &as_ht CARET HASH  &as_ht AT_SIGN DLLR  &as_ht GRAVE TILDE    &kp LANG2
-&kp TAB        &as Q      &as W    &as E     &as R        &as T   &caps_word                                                                       &kp SCROLLLOCK  &as Y              &as U                       &as I              &as O                &as P                 &kp RIGHT
-&kp LC(COMMA)  &as A      &as S    &as D     &as F        &as G   &kp LC(LEFT_ARROW)  &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &kp LC(RIGHT)   &as H              &as J                       &as K              &as L                &as_ht PIPE UNDER     &e_enter
-&kp LG(LEFT)   &as Z      &as X    &as C     &as V        &as B                                     &kp LCTRL           &mo 4                                      &as N              &as M                       &as COMMA          &as DOT              &as_ht EXCL QUESTION  &kp LG(RIGHT)
-&none          &kp GRAVE  &kp DOT  &kp LEFT  &kp LG(TAB)          &kp BSPC            &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                          &kp UP                      &kp LEFT           &kp RIGHT            &kp RBKT              &none
+&kp ESC        &trans     &trans           &trans             &trans       &trans  &trans                                                                           &kp KP_NUMLOCK  &cs SEMI COLON  &as_ht AMPERSAND BACKSLASH  &as_ht CARET HASH  &as_ht AT_SIGN DLLR  &as_ht GRAVE TILDE    &kp LANG2
+&kp TAB        &as Q      &as W            &as E              &as R        &as T   &del_left_mac                                                                    &del_right_mac  &as Y           &as U                       &as I              &as O                &as P                 &kp RIGHT
+&del_left_mac  &as A      &as S            &as D              &as F        &as G   &kp LC(LEFT_ARROW)  &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &kp LC(RIGHT)   &as H           &as J                       &as K              &as L                &as_ht PIPE UNDER     &del_right_mac
+&kp LG(LEFT)   &as Z      &as X            &as C              &as V        &as B                                     &kp LCTRL           &mo 4                                      &as N           &as M                       &as COMMA          &as DOT              &as_ht EXCL QUESTION  &kp LG(RIGHT)
+&none          &kp GRAVE  &kp LC(LG(DOT))  &kp LC(LG(RIGHT))  &kp LG(TAB)          &kp BSPC            &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                       &kp UP                      &kp LEFT           &kp RIGHT            &kp RBKT              &none
             >;
         };
 
         num_sym {
             bindings = <
 &bootloader  &trans         &trans           &trans           &trans           &trans           &trans                                                         &trans             &trans                                  &trans                      &trans    &trans      &trans    &bootloader
-&trans       &kp PERCENT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_EQUAL     &trans                                                         &trans             &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP    &kp SQT     &trans    &kp BSLH
+&trans       &kp PERCENT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &trans                                                         &trans             &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP    &kp SQT     &trans    &kp BSLH
 &trans       &kp KP_DIVIDE  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp LC(LS(LEFT_ARROW))  &trans  &trans      &trans  &kp CAPS   &kp LC(LS(RIGHT))  &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN  &kp RIGHT   &trans    &trans
 &trans       &kp KP_MINUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                                      &trans      &mo 4                                 &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans    &trans      &trans    &kp RSHFT
 &sys_reset   &kp CARET      &kp PERIOD       &kp KP_NUMBER_0  &kp ENTER                         &mo 3                   &trans  &trans      &trans  &kp ENTER  &kp KP_N0                                                  &kp UP                      &kp DOWN  &kp KP_DOT  &kp RBKT  &sys_reset
