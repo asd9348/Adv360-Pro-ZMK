@@ -417,7 +417,7 @@
 &trans  &as Y   &as U   &as I      &as O    &as P                 &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &as H   &as J   &as K      &as L    &as_ht PIPE UNDER     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &as N   &as M   &as COMMA  &as DOT  &as_ht EXCL QUESTION                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans                         &trans  &to 0   &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans                         &trans  &mo 6   &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
