@@ -111,7 +111,7 @@
             label = "DEL_RIGHT_MAC";
         };
 
-        del_left_mac: del_left {
+        del_left_mac: del_left_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(LEFT)) &kp BACKSPACE>;
@@ -129,9 +129,7 @@
             label = "TAP_DANCE_MY;
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings =
-            <&mt LT GT>,
-            <&kp LT &kp GT &kp LEFT>;
+            bindings =<&mt LT GT>,<&kp LT &kp GT &kp LEFT>;
         };
 
 
