@@ -357,7 +357,9 @@
 &trans  &kp LA(SPACE)  &kp F4      &kp F5   &kp F6                &kp K_MUTE     &none   &trans  &trans      &trans  &trans  &none      &kp H   &kp LEFT           &kp DOWN   &kp RIGHT   &kp KP_PLUS   &trans
 &trans  &kp LG(LS(T))  &kp F1      &kp F2   &kp F3                &kp LG(LS(S))                  &trans      &trans                   &kp N   &td_ang            &kp KP_N2  &kp KP_N3   &kp KP_ENTER  &kp RSHFT
 &trans  &kp LG(LC(T))  &kp K_CALC  &trans   &kp C_AL_MY_COMPUTER                 &trans  &mo 2   &trans      &trans  &trans  &trans          &kp UP             &kp DOWN   &kp KP_DOT  &kp RBKT      &sys_reset
-        };
+            >;
+
+};
 
         num_sym_left {
             bindings = <
