@@ -143,13 +143,13 @@
         to_func {
             bindings = <&mo 2>;
             key-positions = <31 30 66>;
-            layers = <0>;;
+            layers = <0>;
         };
 
         to_arr1 {
             bindings = <&mo 3>;
             key-positions = <66 31 32>;
-            layers = <0>;;
+            layers = <0>;
         };
 
         to_arr2 {
@@ -167,7 +167,7 @@
         space {
             bindings = <&kp SPACE>;
             key-positions = <66 31>;
-            layers = <0>;;
+            layers = <0>;
         };
 
         enter {
