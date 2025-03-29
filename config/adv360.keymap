@@ -125,12 +125,12 @@
             label = "E_ENTER";
         };
 
-        td_ang: tap_dance_angle {
+        td_ang: td_ang {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MY";
+            label = "TD_ANG";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LT GT>, <&kp LT &kp GT &kp LEFT>;
+            bindings = <&mt GT LT>, <&kp B>;
         };
     };
 
@@ -143,24 +143,25 @@
         to_func {
             bindings = <&mo 2>;
             key-positions = <31 30 66>;
+            layers = <0>
         };
 
         to_arr1 {
             bindings = <&mo 3>;
             key-positions = <66 31 32>;
-            slow-release;
+            layers = <0>
         };
 
         to_arr2 {
             bindings = <&mo 3>;
             key-positions = <66 31 32 30>;
-            slow-release;
+            layers = <0>
         };
 
         to_arr3 {
             bindings = <&to 2>;
             key-positions = <66 29>;
-            slow-release;
+            layers = <0>
         };
 
         space {
@@ -172,131 +173,157 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <32 66>;
+            layers = <0>
         };
 
         home {
             bindings = <&kp HOME>;
             key-positions = <66 19>;
+            layers = <0>
         };
-
         end {
             bindings = <&kp END>;
             key-positions = <66 33>;
+            layers = <0>
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <17 66>;
+            layers = <0>
         };
 
         pgdn {
             bindings = <&kp PG_DN>;
             key-positions = <66 30>;
+            layers = <0>
         };
+
 
         pgup {
             bindings = <&kp PG_UP>;
             key-positions = <16 66>;
+            layers = <0>
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <66 18>;
+            layers = <0>
         };
 
         sk_W {
             bindings = <&sk LEFT_GUI>;
             key-positions = <47 66>;
+            layers = <0>
         };
 
         sk_C {
             bindings = <&sk LEFT_CONTROL>;
             key-positions = <66 48>;
+            layers = <0>
         };
 
         sk_A {
             bindings = <&sk LEFT_ALT>;
             key-positions = <66 49>;
+            layers = <0>
         };
 
         sk_S {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <66 50>;
+            layers = <0>
         };
 
         sk_CS {
             bindings = <&sk LEFT_GUI>;
             key-positions = <66 48 50>;
+            layers = <0>
         };
 
         sk_CA {
             bindings = <&sk LC(LEFT_ALT)>;
             key-positions = <66 48 49>;
+            layers = <0>
         };
 
         sk_CAS {
             bindings = <&sk LEFT_GUI>;
             key-positions = <66 48 49 50>;
+            layers = <0>
         };
 
         sk_AS {
             bindings = <&sk LEFT_GUI>;
             key-positions = <66 49 50>;
+            layers = <0>
         };
 
         sk_CW {
             bindings = <&sk LEFT_GUI>;
             key-positions = <47 66 48>;
+            layers = <0>
         };
 
         dt_right {
             bindings = <&kp LG(LC(RIGHT))>;
             key-positions = <49 50>;
+            layers = <0>
         };
 
         dt_left {
             bindings = <&kp LG(LC(LEFT))>;
             key-positions = <48 49>;
+            layers = <0>
         };
 
         left_sel {
             bindings = <&kp LC(LS(LEFT_ARROW))>;
             key-positions = <56 55>;
+            layers = <0>
         };
 
         right_sel {
             bindings = <&kp LC(LS(RIGHT))>;
             key-positions = <57 56>;
+            layers = <0>
         };
 
         all_sel {
             bindings = <&kp B>;
             key-positions = <55 56 57>;
+            layers = <0>
         };
 
         del_right {
             bindings = <&del_right_mac>;
             key-positions = <32 31>;
+            layers = <0>
         };
 
         del_left {
             bindings = <&del_left_mac>;
             key-positions = <31 30>;
+            layers = <0>
         };
 
         del_all {
             bindings = <&del_all>;
             key-positions = <30 31 32>;
+            layers = <0>
         };
 
         mov_left {
             bindings = <&kp LC(LEFT)>;
             key-positions = <42 41>;
+            layers = <0>
         };
 
         mov_right {
             bindings = <&kp LC(RIGHT)>;
             key-positions = <42 43>;
+            layers = <0>
         };
     };
 
