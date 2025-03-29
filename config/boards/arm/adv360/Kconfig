@@ -5,3 +5,20 @@ config BOARD_ENABLE_DCDC
     select SOC_DCDC_NRF52X
     default y
     depends on BOARD_ADV360_LEFT || BOARD_ADV360_RIGHT
+
+menu "Combo options"
+
+config ZMK_COMBO_MAX_PRESSED_COMBOS
+    int "Maximum number of currently pressed combos"
+    default 30
+
+config ZMK_COMBO_MAX_COMBOS_PER_KEY
+    int "Maximum number of combos per key"
+    default 30
+
+config ZMK_COMBO_MAX_KEYS_PER_COMBO
+    int "Maximum number of keys per combo"
+    default 30
+
+# Combo options
+endmenu
