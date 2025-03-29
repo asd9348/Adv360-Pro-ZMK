@@ -159,6 +159,7 @@
             bindings = <&mo 2>;
             key-positions = <31 30 66>;
             layers = <0>;
+            slow-release;
         };
 
         to_arr1 {
