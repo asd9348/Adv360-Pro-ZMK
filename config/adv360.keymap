@@ -103,13 +103,11 @@
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
-    behaviors {
             my_layer_2_b: my_layer_2_b_behavior {
                     compatible = "zmk,behavior-key-press";
                     label = "LAYER_2_B";
                     bindings = <&kp KC_C>; /* Example: Key B on Layer 2 sends KC_C */
             };
-    };
         del_right_mac: del_right_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -129,11 +127,34 @@
             key-positions = <31 30 66>;
         };
 
+        to_arr1 {
+            bindings = <&mo 3>;
+            key-positions = <66 31 32>;
+            slow-release;
+        };
+
+        to_arr2 {
+            bindings = <&mo 3>;
+            key-positions = <66 31 32>;
+            slow-release;
+        };
+        to_arr3 {
+            bindings = <&mo 3>;
+            key-positions = <66 31 32>;
+            slow-release;
+        };
+
+
         space {
             bindings = <&kp SPACE>;
             key-positions = <66 31>;
             layers = <0>;
         };
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 66>;
+        };
+
 
         home {
             bindings = <&kp HOME>;
@@ -143,11 +164,6 @@
         end {
             bindings = <&to 2>;
             key-positions = <66 33>;
-        };
-
-        win {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <47 66>;
         };
 
         esc {
@@ -165,11 +181,51 @@
             key-positions = <16 66>;
         };
 
-        to_arr {
-            bindings = <&mo 3>;
-            key-positions = <66 31 32>;
-            slow-release;
+        del {
+            bindings = <&kp PG_UP>;
+            key-positions = <16 66>;
         };
+
+
+
+        sk_W {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_C {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_A {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_S {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_CS {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_CA {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_CAS {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_AS {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+        sk_CW {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <47 66>;
+        };
+
+
 
         dt_right {
             bindings = <&kp LG(LC(RIGHT))>;
@@ -194,11 +250,6 @@
         all_sel {
             bindings = <&kp B>;
             key-positions = <55 56 57>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <32 66>;
         };
 
         del_right {
