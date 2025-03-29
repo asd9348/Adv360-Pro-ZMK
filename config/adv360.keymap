@@ -126,7 +126,7 @@
         };
         td_ang: tap_dance_angle {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MY;
+            label = "TAP_DANCE_MY";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings =<&mt LT GT>,<&kp LT &kp GT &kp LEFT>;
