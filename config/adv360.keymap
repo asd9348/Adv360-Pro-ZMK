@@ -103,11 +103,11 @@
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
-            my_layer_2_b: my_layer_2_b_behavior {
-                    compatible = "zmk,behavior-key-press";
-                    label = "LAYER_2_B";
-                    bindings = <&kp KC_C>; /* Example: Key B on Layer 2 sends KC_C */
-            };
+        my_layer_2_b: my_layer_2_b_behavior {
+            compatible = "zmk,behavior-key-press";
+            label = "LAYER_2_B";
+            bindings = <&kp KC_C>;
+        };
         del_right_mac: del_right_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
