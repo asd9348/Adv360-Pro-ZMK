@@ -142,7 +142,7 @@
         compatible = "zmk,combos";
 
         to_func {
-            bindings = <&mo 2>;
+            bindings = <&to 2>;
             key-positions = <31 30 66>;
             layers = <0>;
         };
@@ -160,7 +160,7 @@
         };
 
         to_arr3 {
-            bindings = <&mo 6>;
+            bindings = <&to 6>;
             key-positions = <66 29>;
             layers = <0>;
         };
