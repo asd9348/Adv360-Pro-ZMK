@@ -103,7 +103,13 @@
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
-
+    behaviors {
+            my_layer_2_b: my_layer_2_b_behavior {
+                    compatible = "zmk,behavior-key-press";
+                    label = "LAYER_2_B";
+                    bindings = <&kp KC_C>; /* Example: Key B on Layer 2 sends KC_C */
+            };
+    };
         del_right_mac: del_right_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -135,7 +141,7 @@
         };
 
         end {
-            bindings = <&kp END>;
+            bindings = <&to 2>;
             key-positions = <66 33>;
         };
 
@@ -233,7 +239,7 @@
             bindings = <
 &trans  &trans         &kp F10     &kp F11  &kp F12               &kp C_VOL_UP   &tog 1                                      &mo 3   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LS(C))  &kp F7      &kp F8   &kp F9                &kp C_VOL_DN   &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(SPACE)  &kp F4      &kp F5   &kp F6                &kp K_MUTE     &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(SPACE)  &kp F4      &my_layer_2_b   &kp F6                &kp K_MUTE     &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LS(T))  &kp F1      &kp F2   &kp F3                &kp LG(LS(S))                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LC(T))  &kp K_CALC  &trans   &kp C_AL_MY_COMPUTER                 &trans  &mo 2   &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
