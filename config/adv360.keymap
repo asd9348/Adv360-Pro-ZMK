@@ -387,7 +387,7 @@
         num_sym_left {
             bindings = <
 &bootloader  &trans    &trans             &trans    &trans         &trans  &trans                                      &trans  &trans  &trans         &trans    &trans         &trans    &bootloader
-&trans       &trans    &kp LC(PAGE_DOWN)  &kp UP    &kp LC(PG_UP)  &trans  &trans                                      &trans  &trans  &kp LC(PG_DN)  &kp UP    &kp LC(PG_UP)  &trans    &trans
+&trans       &trans    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &trans  &trans                                      &trans  &trans  &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &trans    &trans
 &trans       &trans    &kp LEFT           &kp DOWN  &kp RIGHT      &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT      &trans    &trans
 &trans       &kp LGUI  &kp LCTRL          &kp LALT  &kp LSHFT      &trans                  &trans      &trans                  &trans  &kp RSHFT      &kp RALT  &kp RCTRL      &kp RGUI  &trans
 &trans       &trans    &trans             &trans    &trans                 &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans    &trans         &trans    &trans
