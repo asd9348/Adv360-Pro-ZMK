@@ -376,11 +376,11 @@
 
         func {
             bindings = <
-&trans  &trans         &kp F10  &kp F11  &kp F12  &kp C_VOL_UP   &kp K_CALC                                                &mo 3   &trans  &trans             &trans     &trans      &trans        &bt BT_SEL 0
-&trans  &kp LG(LS(C))  &kp F7   &kp F8   &kp F9   &kp C_VOL_DN   &kp C_AL_MY_COMPUTER                                      &none   &kp Y   &kp DOUBLE_QUOTES  &kp UP     &kp SQT     &kp KP_MINUS  &bt BT_SEL 1
-&trans  &kp LA(SPACE)  &kp F4   &kp F5   &kp F6   &kp K_MUTE     &kp LG(LC(T))         &trans  &trans      &trans  &trans  &none   &kp H   &kp LEFT           &kp DOWN   &kp RIGHT   &kp KP_PLUS   &bt BT_SEL 2
-&trans  &kp LG(LS(T))  &kp F1   &kp F2   &kp F3   &kp LG(LS(S))                                &trans      &trans                  &kp N   &td_ang            &kp KP_N2  &kp KP_N3   &kp KP_ENTER  &out OUT_TOG
-&trans  &trans         &trans   &trans   &trans                  &trans                &mo 2   &trans      &trans  &trans  &trans          &kp UP             &kp DOWN   &kp KP_DOT  &kp RBKT      &sys_reset
+&bl BL_INC  &trans         &kp F10  &kp F11  &kp F12  &kp C_VOL_UP   &kp K_CALC                                                &mo 3   &trans  &trans             &trans    &trans     &trans  &bt BT_SEL 0
+&bl BL_DEC  &kp LG(LS(C))  &kp F7   &kp F8   &kp F9   &kp C_VOL_DN   &kp C_AL_MY_COMPUTER                                      &none   &kp Y   &kp DOUBLE_QUOTES  &kp UP    &kp SQT    &trans  &bt BT_SEL 1
+&bl BL_TOG  &kp LA(SPACE)  &kp F4   &kp F5   &kp F6   &kp K_MUTE     &kp LG(LC(T))         &trans  &trans      &trans  &trans  &none   &kp H   &kp LEFT           &kp DOWN  &kp RIGHT  &trans  &bt BT_SEL 2
+&trans      &kp LG(LS(T))  &kp F1   &kp F2   &kp F3   &kp LG(LS(S))                                &trans      &trans                  &kp N   &td_ang            &trans    &trans     &trans  &out OUT_BLE
+&trans      &trans         &trans   &trans   &trans                  &trans                &mo 2   &trans      &trans  &trans  &trans          &trans             &trans    &trans     &trans  &out OUT_USB
             >;
         };
 
