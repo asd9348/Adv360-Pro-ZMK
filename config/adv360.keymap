@@ -126,6 +126,19 @@
             label = "E_ENTER";
         };
 
+        ctrl_v_v_ent: ctrl_v_v_ent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(LC(V))>,
+                <&macro_wait_time 100>,
+                <&kp V>,
+                <&macro_wait_time 100>,
+                <&kp ENTER>;
+
+            label = "CTRL_V_V_ENT";
+        };
+
         td_ang: td_ang {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ANG";
@@ -348,6 +361,16 @@
         to_top {
             bindings = <&kp LC(A)>;
             key-positions = <31 17>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <66 49>;
+        };
+
+        ctrl_Val_v {
+            bindings = <&ctrl_v_v_ent>;
+            key-positions = <66 50>;
         };
     };
 
