@@ -246,7 +246,7 @@
 
         sk_W {
             bindings = <&sk LEFT_GUI>;
-            key-positions = <>;
+            key-positions = <13 44>;
             layers = <0>;
         };
 
