@@ -189,8 +189,8 @@
             slow-release;
         };
 
-        to_arr3 {
-            bindings = <&mo 6>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <66 29>;
             layers = <0>;
             slow-release;
