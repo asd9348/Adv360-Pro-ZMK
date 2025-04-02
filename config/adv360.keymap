@@ -384,6 +384,21 @@
             bindings = <&kp LC(Z)>;
             key-positions = <66 47>;
         };
+
+        wintab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <48 49 50>;
+        };
+
+        win_left {
+            bindings = <&kp LG(LEFT)>;
+            key-positions = <49 48 66>;
+        };
+
+        win_right {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <49 66 50>;
+        };
     };
 
     keymap {
