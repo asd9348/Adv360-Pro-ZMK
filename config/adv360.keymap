@@ -374,6 +374,16 @@
             key-positions = <50 66>;
             layers = <0>;
         };
+
+        ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <66 48>;
+        };
+
+        ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <66 47>;
+        };
     };
 
     keymap {
