@@ -422,42 +422,42 @@
 
         short_2 {
             bindings = <&kp LG(NUMBER_2)>;
-            key-positions = <48 65>;
+            key-positions = <65 49>;
         };
 
         short_3 {
             bindings = <&kp LG(NUMBER_3)>;
-            key-positions = <48 65>;
+            key-positions = <65 50>;
         };
 
         short_4 {
             bindings = <&kp LG(NUMBER_4)>;
-            key-positions = <48 65>;
+            key-positions = <65 30>;
         };
 
         short_5 {
             bindings = <&kp LG(NUMBER_5)>;
-            key-positions = <48 65>;
+            key-positions = <65 31>;
         };
 
         short_6 {
             bindings = <&kp LG(NUMBER_6)>;
-            key-positions = <48 65>;
+            key-positions = <65 32>;
         };
 
         short_7 {
             bindings = <&kp LG(NUMBER_7)>;
-            key-positions = <48 65>;
+            key-positions = <65 16>;
         };
 
         short_8 {
             bindings = <&kp LG(NUMBER_8)>;
-            key-positions = <48 65>;
+            key-positions = <65 17>;
         };
 
         short_9 {
             bindings = <&kp LG(NUMBER_9)>;
-            key-positions = <48 65>;
+            key-positions = <65 18>;
         };
     };
 
