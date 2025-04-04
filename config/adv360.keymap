@@ -89,7 +89,7 @@
         sk_mod: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <135>;
             bindings = <&kp>, <&sk>;
         };
