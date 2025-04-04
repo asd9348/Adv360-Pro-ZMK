@@ -177,6 +177,7 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_timeout_ms = <30>;
 
         to_func {
             bindings = <&mo 2>;
@@ -558,8 +559,4 @@
             then-layer = <5>;
         };
     };
-};
-
-&config_combo {
-    timeout-ms = <30>;  // Global setting applies to all combos without explicit timeout
 };
