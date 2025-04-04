@@ -173,6 +173,11 @@
     macros {
     };
 
+
+&config_combo {
+    timeout-ms = <30>;  // Global setting applies to all combos without explicit timeout
+};
+
     combos {
         compatible = "zmk,combos";
 
