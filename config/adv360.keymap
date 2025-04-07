@@ -470,31 +470,31 @@
 
         default_layer {
             bindings = <
-&trans  &kp NUMBER_1               &kp NUMBER_2         &kp NUMBER_3               &kp NUMBER_4                   &kp N5  &trans                                                                           &kp KP_NUMLOCK  &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &as_ht AT_SIGN DLLR  &cs GRAVE TILDE       &trans
-&trans  &as Q                      &as W                &as E                      &as R                          &as T   &del_left_mac                                                                    &del_right_mac  &as Y           &as U                    &as I           &as O                &as P                 &trans
-&trans  &as A                      &as S                &as D                      &as F                          &as G   &kp LC(LEFT_ARROW)  &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &kp LC(RIGHT)   &as H           &as J                    &as K           &as L                &as_ht PIPE UNDER     &trans
-&trans  &as Z                      &as X                &as C                      &as V                          &as B                                     &kp LCTRL           &mo 4                                      &as N           &as M                    &as COMMA       &as DOT              &as_ht EXCL QUESTION  &trans
-&trans  &sk_mod LEFT_WIN LEFT_WIN  &sk_mod LCTRL LCTRL  &sk_mod LEFT_ALT LEFT_ALT  &sk_mod LEFT_SHIFT LEFT_SHIFT          &kp BSPC            &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                       &kp UP                   &kp LEFT        &kp RIGHT            &kp DOWN              &trans
+&trans         &kp NUMBER_1               &kp NUMBER_2         &kp NUMBER_3               &kp NUMBER_4                   &kp N5  &trans                                                                          &trans     &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &as_ht AT_SIGN DLLR  &cs GRAVE TILDE       &trans
+&trans         &as Q                      &as W                &as E                      &as R                          &as T   &trans                                                                          &trans     &as Y           &as U                    &as I           &as O                &as P                 &trans
+&kp BACKSPACE  &as A                      &as S                &as D                      &as F                          &as G   &kp LC(BACKSPACE)  &kp LEFT_ALT  &kp LEFT_GUI        &kp LGUI       &caps_word  &trans     &as H           &as J                    &as K           &as L                &as_ht PIPE UNDER     &trans
+&trans         &as Z                      &as X                &as C                      &as V                          &as B                                    &kp LCTRL           &mo 4                                 &as N           &as M                    &as COMMA       &as DOT              &as_ht EXCL QUESTION  &trans
+&trans         &sk_mod LEFT_WIN LEFT_WIN  &sk_mod LCTRL LCTRL  &sk_mod LEFT_ALT LEFT_ALT  &sk_mod LEFT_SHIFT LEFT_SHIFT          &kp BSPC           &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                  &kp UP                   &kp LEFT        &kp RIGHT            &kp DOWN              &trans
             >;
         };
 
         num_sym {
             bindings = <
-&bootloader    &kp NUMBER_6       &kp N7           &kp N8           &kp N9           &kp N0           &trans                                                                &trans             &trans                                  &trans                      &trans    &trans     &trans  &bootloader
-&trans         &cs PERCENT CARET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &trans                                                                &trans             &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP    &kp SQT    &trans  &trans
-&kp BACKSPACE  &kp KP_DIVIDE      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp LC(LS(LEFT_ARROW))  &trans  &trans      &trans          &kp CAPS  &kp LC(LS(RIGHT))  &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN  &kp RIGHT  &trans  &trans
-&trans         &kp KP_MINUS       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                                      &trans      &trans                                       &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans    &trans     &trans  &trans
-&trans         &trans             &kp PERIOD       &kp KP_NUMBER_0  &kp ENTER                         &mo 3                   &trans  &trans      &kp LANGUAGE_2  &trans    &trans                                                     &trans                      &trans    &trans     &trans  &trans
+&bootloader    &kp NUMBER_6       &kp N7           &kp N8           &kp N9           &kp N0           &trans                                                &trans  &trans                                  &trans                      &trans    &trans     &trans  &bootloader
+&trans         &cs PERCENT CARET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &trans                                                &trans  &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP    &kp SQT    &trans  &trans
+&kp BACKSPACE  &kp KP_DIVIDE      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &trans  &trans  &trans      &trans          &kp CAPS  &trans  &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN  &kp RIGHT  &trans  &trans
+&trans         &kp KP_MINUS       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS                      &trans      &trans                            &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans    &trans     &trans  &trans
+&trans         &trans             &kp PERIOD       &kp KP_NUMBER_0  &kp ENTER                         &mo 3   &trans  &trans      &kp LANGUAGE_2  &trans    &trans                                          &trans                      &trans    &trans     &trans  &trans
             >;
         };
 
         func {
             bindings = <
-&bt BT_SEL 0  &bt BT_CLR     &kp F10  &kp F11  &kp F12  &kp C_VOL_UP   &kp K_CALC                                                &macro_ver         &kp KP_NUMLOCK                          &kp SCROLLLOCK              &kp PAUSE_BREAK  &trans     &trans  &bl BL_INC
-&bt BT_SEL 1  &kp LG(LS(C))  &kp F7   &kp F8   &kp F9   &kp C_VOL_DN   &kp C_AL_MY_COMPUTER                                      &trans             &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP           &kp SQT    &trans  &bl BL_DEC
-&bt BT_SEL 3  &kp LA(SPACE)  &kp F4   &kp F5   &kp F6   &kp K_MUTE     &kp LG(LC(T))         &trans  &trans      &trans  &trans  &kp LC(LS(RIGHT))  &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN         &kp RIGHT  &trans  &bl BL_ON
-&out OUT_BLE  &kp LG(LS(T))  &kp F1   &kp F2   &kp F3   &kp LG(LS(S))                                &trans      &trans                             &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans           &trans     &trans  &bl BL_OFF
-&out OUT_USB  &trans         &trans   &trans   &trans                  &trans                &mo 2   &trans      &trans  &trans  &trans                                                     &trans                      &trans           &trans     &trans  &trans
+&bt BT_SEL 0  &bt BT_CLR     &kp F10  &kp F11  &kp F12  &kp C_VOL_UP   &kp K_CALC                                                &macro_ver  &kp KP_NUMLOCK                          &kp SCROLLLOCK              &kp PAUSE_BREAK  &trans     &trans  &bl BL_INC
+&bt BT_SEL 1  &kp LG(LS(C))  &kp F7   &kp F8   &kp F9   &kp C_VOL_DN   &kp C_AL_MY_COMPUTER                                      &trans      &cs RIGHT_BRACKET LEFT_BRACKET          &kp DOUBLE_QUOTES           &kp UP           &kp SQT    &trans  &bl BL_DEC
+&bt BT_SEL 3  &kp LA(SPACE)  &kp F4   &kp F5   &kp F6   &kp K_MUTE     &kp LG(LC(T))         &trans  &trans      &trans  &trans  &trans      &cs RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp LEFT                    &kp DOWN         &kp RIGHT  &trans  &bl BL_ON
+&out OUT_BLE  &kp LG(LS(T))  &kp F1   &kp F2   &kp F3   &kp LG(LS(S))                                &trans      &trans                      &as_ht RIGHT_BRACE LEFT_BRACE           &cs GREATER_THAN LESS_THAN  &trans           &trans     &trans  &bl BL_OFF
+&out OUT_USB  &trans         &trans   &trans   &trans                  &trans                &mo 2   &trans      &trans  &trans  &trans                                              &trans                      &trans           &trans     &trans  &trans
             >;
         };
 
