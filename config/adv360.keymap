@@ -475,7 +475,7 @@
 
         default_layer {
             bindings = <
-&trans  &kp NUMBER_1               &kp NUMBER_2         &kp NUMBER_3               &kp NUMBER_4                   &kp N5  &kp KP_NUM                                                                  &trans     &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &cs AT_SIGN DLLR  &cs GRAVE TILDE    &kp LANG1
+&trans  &kp NUMBER_1               &kp NUMBER_2         &kp NUMBER_3               &kp NUMBER_4                   &kp N5  &trans                                                                      &trans     &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &cs AT_SIGN DLLR  &cs GRAVE TILDE    &trans
 &trans  &as Q                      &as W                &as E                      &as R                          &as T   &kp LC(LS(A))                                                               &trans     &as Y           &as U                    &as I           &as O             &as P              &trans
 &trans  &as A                      &as S                &as D                      &as F                          &as G   &kp LC(Q)      &kp LEFT_ALT  &kp LEFT_GUI        &kp LEFT_GUI   &caps_word  &trans     &as H           &as J                    &as K           &as L             &cs PIPE UNDER     &trans
 &trans  &as Z                      &as X                &as C                      &as V                          &as B                                &kp LCTRL           &mo 4                                 &as N           &as M                    &kp COMMA       &kp DOT           &cs EXCL QUESTION  &trans
@@ -525,11 +525,11 @@
 
         scrl {
             bindings = <
-&bl BL_TOG    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans          &trans           &trans  &bt BT_SEL 0
-&bl BL_CYCLE  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LC(HOME)    &msc SCRL_UP    &kp LC(END)      &trans  &bt BT_SEL 1
-&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &bt BT_SEL 2
-&trans        &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans          &trans          &trans           &trans  &bt BT_SEL 3
-&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans           &trans  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LC(HOME)    &msc SCRL_UP    &kp LC(END)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans           &trans  &trans
             >;
         };
 
