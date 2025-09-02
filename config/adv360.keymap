@@ -535,7 +535,7 @@
 
         alpha_sub {
             bindings = <
-&trans         &trans  &trans  &trans     &trans   &trans             &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &cs AT_SIGN DLLR  &cs GRAVE TILDE             &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &as Y   &as U   &as I      &as O    &as P              &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp BACKSPACE  &as H   &as J   &as K      &as L    &cs PIPE UNDER     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &as N   &as M   &kp COMMA  &kp DOT  &cs EXCL QUESTION                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
