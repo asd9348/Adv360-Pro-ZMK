@@ -134,13 +134,13 @@
             label = "E_ENTER";
         };
 
-        ctrl_v_v_ent: ctrl_v_v_ent {
+        ctrl_a_v_ent: ctrl_v_v_ent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LA(LC(V))>,
+                <&kp LC(A)>,
                 <&macro_wait_time 100>,
-                <&kp V>,
+                <&kp LC(V)>,
                 <&macro_wait_time 100>,
                 <&kp ENTER>;
 
@@ -379,7 +379,7 @@
         };
 
         ctrl_Val_v {
-            bindings = <&ctrl_v_v_ent>;
+            bindings = <&ctrl_a_v_ent>;
             key-positions = <50 66>;
             layers = <0>;
         };
@@ -475,11 +475,11 @@
 
         default_layer {
             bindings = <
-&trans     &kp NUMBER_1               &kp NUMBER_2         &kp NUMBER_3               &kp NUMBER_4                   &kp N5  &trans                                                                      &trans     &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &cs AT_SIGN DLLR  &cs GRAVE TILDE    &trans
-&trans     &as Q                      &as W                &as E                      &as R                          &as T   &kp LC(LS(A))                                                               &trans     &as Y           &as U                    &as I           &as O             &as P              &trans
-&trans     &as A                      &as S                &as D                      &as F                          &as G   &kp LA(LS(T))  &kp LEFT_ALT  &kp LEFT_GUI        &kp LEFT_GUI   &caps_word  &trans     &as H           &as J                    &as K           &as L             &cs PIPE UNDER     &trans
-&kp LC(C)  &as Z                      &as X                &as C                      &as V                          &as B                                &kp LCTRL           &mo 4                                 &as N           &as M                    &kp COMMA       &kp DOT           &cs EXCL QUESTION  &trans
-&kp LC(V)  &sk_mod LEFT_WIN LEFT_WIN  &sk_mod LCTRL LCTRL  &sk_mod LEFT_ALT LEFT_ALT  &sk_mod LEFT_SHIFT LEFT_SHIFT          &kp BSPC       &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                  &kp UP                   &kp LEFT        &kp RIGHT         &kp DOWN           &trans
+&trans         &kp NUMBER_1               &kp NUMBER_2         &kp NUMBER_3               &kp NUMBER_4                   &kp N5  &trans                                                                      &trans     &cs SEMI COLON  &cs AMPERSAND BACKSLASH  &cs CARET HASH  &cs AT_SIGN DLLR  &cs GRAVE TILDE    &trans
+&trans         &as Q                      &as W                &as E                      &as R                          &as T   &kp LC(LS(A))                                                               &trans     &as Y           &as U                    &as I           &as O             &as P              &trans
+&trans         &as A                      &as S                &as D                      &as F                          &as G   &kp LA(LS(T))  &kp LEFT_ALT  &kp LEFT_GUI        &kp LEFT_GUI   &caps_word  &trans     &as H           &as J                    &as K           &as L             &cs PIPE UNDER     &trans
+&kp LC(C)      &as Z                      &as X                &as C                      &as V                          &as B                                &kp LCTRL           &mo 4                                 &as N           &as M                    &kp COMMA       &kp DOT           &cs EXCL QUESTION  &trans
+&ctrl_a_v_ent  &sk_mod LEFT_WIN LEFT_WIN  &sk_mod LCTRL LCTRL  &sk_mod LEFT_ALT LEFT_ALT  &sk_mod LEFT_SHIFT LEFT_SHIFT          &kp BSPC       &mo 1         &kp LEFT_SHIFT      &kp RIGHT_ALT  &kp ENTER   &kp SPACE                  &kp UP                   &kp LEFT        &kp RIGHT         &kp DOWN           &trans
             >;
         };
 
